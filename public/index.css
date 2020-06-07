@@ -75,3 +75,15 @@ nav {
     height: 45vh;
     padding: 2vh;
 }
+
+.form-call-me button {
+    background-color: #039BE5;
+}
+
+.form-call-me button:hover {
+    background-color: #06a9fa;
+}
+
+.advantages ul {
+    list-style: unset;
+}
