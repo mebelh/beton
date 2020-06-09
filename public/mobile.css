@@ -1,0 +1,184 @@
+@media (max-width: 414px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .top-lay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2vh;
+    }
+
+    .top-lay li h2 {
+        margin-top: 0;
+    }
+
+    .top-lay a {
+        font-size: .8em;
+    }
+
+    .top-lay h1 {
+        font-size: 4em;
+    }
+
+    .baner {
+        margin-top: 2vh;
+        height: 90vh;
+        background-size: 300%;
+    }
+
+    .baner-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .baner-text {
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-call-me {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 2vh;
+        width: 95vw;
+        height: 50vh;
+        padding: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .info {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .info h4 {
+        color: #008cff;
+    }
+
+    .info-img img,
+    .advantages img {
+        width: 90vw;
+        height: auto;
+        box-shadow: 0 0 10px #0084ff49;
+        border-radius: 20px;
+    }
+
+    .info-text {
+        width: 90vw;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .price {
+        margin-top: 8vh;
+    }
+
+    .price .collection-header {
+        color: #067bdb;
+        font-weight: bold;
+    }
+
+    .price li {
+        display: grid;
+        height: 7vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-weight: bold;
+        font-size: 1.2em;
+        align-items: center;
+        text-align: center;
+    }
+
+    .price li:first-child {
+        height: 15vh;
+        font-size: 1em;
+    }
+
+    .price li:first-child h5 {
+        font-size: 1.3em;
+    }
+
+    .advantages {
+        margin-top: 5vh;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .advantages-text {
+        margin-right: 3vh;
+    }
+
+    .advantages h4 {
+        color: #008cff;
+    }
+
+    .advantages ul li {
+        list-style: circle;
+        margin-top: 1vh;
+    }
+
+    .kontakts {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .kontakts h4 {
+        color: #008cff;
+    }
+
+    .kontakts h3 {
+        text-align: center;
+    }
+
+    .kontakts_block {
+        margin-top: 5vh;
+    }
+
+    .kontakts_block :last-child {
+        margin-left: 1vw;
+    }
+
+
+    .footer {
+        height: 15vh;
+    }
+
+    .footer h5,
+    .footer h6 {
+        font-size: .8em;
+    }
+
+    iframe {
+        margin-top: 2vh;
+    }
+
+    .footer-cont {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .footer-cont,
+    .footer-cont a {
+        color: white;
+    }
+}
