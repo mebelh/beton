@@ -1,16 +1,24 @@
 <nav>
     <ul class="navbar container">
+        {{#if isMain}}
         <li class="active">
             <a href="/" class="navbar-link">Главная</a>
         </li>
-        <li>
-            <a href="/beton" class="navbar-link">Бетон</a>
+        {{else}}
+        <li class="">
+            <a href="/" class="navbar-link">Главная</a>
         </li>
-        <li>
-            <a href="/info" class="navbar-link">О нас</a>
-        </li>
-        <li>
+        {{/if}}
+        {{#if isKontakts}}
+
+        <li class="active">
             <a href="/kontakts" class="navbar-link">Контакты</a>
         </li>
+
+        {{else}}
+        <li class="">
+            <a href="/kontakts" class="navbar-link">Контакты</a>
+        </li>
+        {{/if}}
     </ul>
 </nav>

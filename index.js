@@ -8,6 +8,7 @@ const bodyParser = require("body-parser");
 const exphbs = require("express-handlebars");
 
 const mainRout = require("./routs/main");
+const kontaktsRout = require("./routs/kontakts");
 
 const PORT = 3000;
 
@@ -32,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use("/", mainRout);
+app.use("/", kontaktsRout);
 
 const start = async () => {
     try {

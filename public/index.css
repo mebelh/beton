@@ -84,6 +84,124 @@ nav {
     background-color: #06a9fa;
 }
 
-.advantages ul {
-    list-style: unset;
+ul {
+    list-style: square outside;
+}
+
+.info {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info h4 {
+    color: #008cff;
+}
+
+.info-img img,
+.advantages img {
+    width: 50vh;
+    height: auto;
+    box-shadow: 0 0 10px #0084ff49;
+    border-radius: 20px;
+}
+
+.info-text {
+    width: 30vw;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.price {
+    margin-top: 8vh;
+}
+
+.price .collection-header {
+    color: #067bdb;
+    font-weight: bold;
+}
+
+.price li {
+    display: grid;
+    height: 7vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-weight: bold;
+    font-size: 1.2em;
+    align-items: center;
+    text-align: center;
+}
+
+.price li:first-child {
+    height: 10vh;
+    /* color: #f0f0f0 */
+}
+
+.price li:hover {
+    background-color: #f1f1f1;
+}
+
+.advantages {
+    margin-top: 5vh;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advantages-text {
+    margin-right: 3vh;
+}
+
+.advantages h4 {
+    color: #008cff;
+}
+
+.advantages ul li {
+    list-style: circle;
+    margin-top: 1vh;
+}
+
+.kontakts {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.kontakts h4 {
+    color: #008cff;
+}
+
+.kontakts h3 {
+    text-align: center;
+}
+
+.kontakts_block {
+    margin-top: 5vh;
+}
+
+.kontakts_block :last-child {
+    margin-left: 1vw;
+}
+
+
+.footer {
+    margin-top: 5vh;
+    height: 10vh;
+    background-color: #039be5;
+    box-shadow: 0 0 10px #065780;
+    text-align: center;
+}
+
+.footer-cont {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.footer-cont,
+.footer-cont a {
+    color: white;
 }
