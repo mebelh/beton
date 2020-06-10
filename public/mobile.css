@@ -82,6 +82,10 @@
     .info-text {
         width: 90vw;
         font-size: 1.2em;
+        text-align: unset;
+    }
+
+    .info-text :first-child {
         text-align: center;
     }
 
