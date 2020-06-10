@@ -71,6 +71,7 @@
 
     .info-img img,
     .advantages img {
+        margin-top: 5vh;
         width: 90vw;
         height: auto;
         box-shadow: 0 0 10px #0084ff49;
@@ -84,7 +85,7 @@
     }
 
     .price {
-        margin-top: 8vh;
+        margin-top: 5vh;
     }
 
     .price .collection-header {
@@ -125,8 +126,26 @@
         margin-right: 3vh;
     }
 
+    .advantages-text p {
+        margin-top: 4vh;
+    }
+
+    .advantages-text i {
+        color: #008cff;
+        font-size: 1.6em;
+        justify-content: center;
+        text-align: center;
+        margin-right: 1vw;
+    }
+
+    .advantages-text strong {
+        font-size: 1.2em;
+        color: #003158;
+    }
+
     .advantages h4 {
         color: #008cff;
+        text-align: center;
     }
 
     .advantages ul li {
@@ -138,6 +157,11 @@
         margin-top: 5vh;
         display: flex;
         flex-direction: column;
+    }
+
+    .kontakts iframe {
+        width: 90vw;
+        height: auto;
     }
 
     .kontakts h4 {
