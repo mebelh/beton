@@ -11,7 +11,7 @@ const mainRout = require("./routs/main");
 const kontaktsRout = require("./routs/kontakts");
 const calcRout = require("./routs/calc");
 
-const PORT = 3000;
+const PORT = 80;
 
 const {
     allowInsecurePrototypeAccess,

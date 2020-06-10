@@ -33,11 +33,6 @@ const buttonCalcCall = document.querySelector(".calc button");
 const form = document.querySelector(".form-call-me");
 
 buttonCalcCall.addEventListener("click", () => {
-    // if ($(document).height() < 450) {
-    //     window.scrollTo(0, $(document).height() / 4);
-    // } else {
-    //     window.scrollTo(0, 0);
-    // }
     console.log(Math.floor(form.getBoundingClientRect().y));
 
     window.scrollTo(0, Math.floor(form.getBoundingClientRect().y) * -1);
