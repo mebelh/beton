@@ -28,7 +28,7 @@
 
     .baner {
         margin-top: 2vh;
-        height: 90vh;
+        height: 85vh;
         background-size: 300%;
     }
 
@@ -43,6 +43,7 @@
     .baner-text {
         color: #fff;
         display: flex;
+        text-shadow: #012350 0 0 3px;
         flex-direction: column;
     }
 
@@ -122,20 +123,8 @@
         margin-left: 2vw;
     }
 
-    .advantages-text {
-        margin-right: 3vh;
-    }
-
-    .advantages-text p {
-        margin-top: 4vh;
-    }
-
-    .advantages-text i {
-        color: #008cff;
-        font-size: 1.6em;
-        justify-content: center;
-        text-align: center;
-        margin-right: 1vw;
+    .advantages-end .advantages-text {
+        font-size: 1.2em;
     }
 
     .advantages-text strong {

@@ -162,6 +162,33 @@ ul {
     margin-top: 1vh;
 }
 
+.advantages-text {
+    margin-right: 3vh;
+}
+
+.advantages-text p {
+    margin-top: 4vh;
+}
+
+.advantages-text i {
+    color: #008cff;
+    font-size: 1.6em;
+    justify-content: center;
+    text-align: center;
+    margin-right: 1vw;
+    transform: translateY(5px);
+}
+
+.advantages-end {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.advantages-end .advantages-text {
+    grid-column: 2/3;
+    font-size: 1.5em;
+}
+
 .kontakts {
     margin-top: 5vh;
     display: flex;
