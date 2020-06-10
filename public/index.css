@@ -3,6 +3,33 @@
     padding: 0;
 }
 
+input:not([type]):focus:not([readonly]),
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=password]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]),
+input[type=url]:not(.browser-default):focus:not([readonly]),
+input[type=time]:not(.browser-default):focus:not([readonly]),
+input[type=date]:not(.browser-default):focus:not([readonly]),
+input[type=datetime]:not(.browser-default):focus:not([readonly]),
+input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
+input[type=tel]:not(.browser-default):focus:not([readonly]),
+input[type=number]:not(.browser-default):focus:not([readonly]),
+input[type=search]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #008cff;
+    -webkit-box-shadow: 0 1px 0 0 #008cff;
+    box-shadow: 0 1px 0 0 #008cff;
+    border-color: #008cff;
+}
+
+.btn {
+    background-color: #0389e2;
+}
+
+.btn:hover {
+    background-color: #0099ff;
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -63,6 +90,13 @@ nav {
 
 .baner-text_big {
     font-weight: bold;
+}
+
+.baner-text {
+    color: #fff;
+    display: flex;
+    text-shadow: #012350 0 0 3px;
+    flex-direction: column;
 }
 
 .form-call-me {
@@ -210,6 +244,45 @@ ul {
 
 .kontakts_block :last-child {
     margin-left: 1vw;
+}
+
+.calc {
+    display: grid;
+    margin-top: 7vh;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 4fr 1fr;
+}
+
+
+.calc button {
+    margin-top: 5vh;
+    grid-column: 2/3;
+    grid-row: 2/2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calc-body,
+.calc-body input,
+option {
+    text-align: center;
+}
+
+.calc-body {
+    padding: 2vw;
+    border-radius: 2vw;
+    border: 2px solid #008cff;
+    grid-column: 2/3;
+}
+
+.dropdown-content li>span {
+    color: #0070bb;
+    text-align: center;
+}
+
+.calc-body_price {
+    margin-top: 5vh;
 }
 
 

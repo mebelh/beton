@@ -9,6 +9,7 @@ const exphbs = require("express-handlebars");
 
 const mainRout = require("./routs/main");
 const kontaktsRout = require("./routs/kontakts");
+const calcRout = require("./routs/calc");
 
 const PORT = 3000;
 
@@ -33,7 +34,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use("/", mainRout);
-app.use("/", kontaktsRout);
+app.use("/kontakts", kontaktsRout);
+app.use("/calc", calcRout);
 
 const start = async () => {
     try {

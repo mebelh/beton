@@ -20,5 +20,16 @@
             <a href="/kontakts" class="navbar-link">Контакты</a>
         </li>
         {{/if}}
+        {{#if isCalc}}
+
+        <li class="active">
+            <a href="/calc" class="navbar-link">Калькулятор</a>
+        </li>
+
+        {{else}}
+        <li class="">
+            <a href="/calc" class="navbar-link">Калькулятор</a>
+        </li>
+        {{/if}}
     </ul>
 </nav>

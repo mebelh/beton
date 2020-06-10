@@ -1,4 +1,3 @@
-// M.Tabs.init(document.querySelectorAll(".tabs"));
 setTimeout(function () {
     let viewheight = $(window).height();
     let viewwidth = $(window).width();
@@ -18,8 +17,6 @@ const name = document.querySelector(".form_name");
 const phone = document.querySelector(".form_phone");
 formBtn.addEventListener("click", async (e) => {
     e.preventDefault();
-    const name = document.querySelector(".form_name");
-    const phone = document.querySelector(".form_phone");
     if (name.value !== "" && phone.value !== "") {
         fetch(`/${name.value}/${phone.value}`, {
             method: "POST",
@@ -29,8 +26,6 @@ formBtn.addEventListener("click", async (e) => {
         }, 3000);
     }
 });
-if (name.value !== "" && phone.value !== "") {
-}
 $(document).ready(function () {
     $(".modal").modal();
 });
@@ -46,16 +41,4 @@ const price = [
     { name: "M500", strong: "П4", price: "5000р" },
 ];
 
-const priceTab = document.querySelector(".price");
-
-price.forEach((e, index) => {
-    const elem = document.createElement("li");
-    elem.classList.add("collection-item");
-    for (let i in e) {
-        const div = document.createElement("div");
-        div.textContent = e[i];
-        elem.appendChild(div);
-    }
-    elem.style.backgroundColor = index % 2 !== 0 ? "white" : "#f0f0f0";
-    priceTab.appendChild(elem);
-});
+export default price;

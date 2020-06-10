@@ -40,13 +40,6 @@
         justify-content: space-between;
     }
 
-    .baner-text {
-        color: #fff;
-        display: flex;
-        text-shadow: #012350 0 0 3px;
-        flex-direction: column;
-    }
-
     .form-call-me {
         background-color: #fff;
         display: flex;
@@ -173,6 +166,14 @@
         margin-left: 1vw;
     }
 
+    .calc {
+        display: grid;
+        grid-template-columns: 1fr 50fr 1fr;
+    }
+
+    .calc-body_price {
+        text-align: center;
+    }
 
     .footer {
         height: 15vh;
