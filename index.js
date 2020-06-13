@@ -11,7 +11,7 @@ const mainRout = require("./routs/main");
 const kontaktsRout = require("./routs/kontakts");
 const calcRout = require("./routs/calc");
 
-const PORT = 80;
+const PORT = 3000;
 
 const {
     allowInsecurePrototypeAccess,
@@ -27,7 +27,7 @@ app.set("view engine", "hbs");
 app.set("views", "views");
 
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.static(path.join(__dirname, "view", "img")));
+app.use(express.static(path.join(__dirname, "views", "img")));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
