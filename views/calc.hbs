@@ -7,10 +7,39 @@
             </select>
             <label>Марка бетона</label>
         </div>
-        <input type="text" class="count" placeholder="Объем бетона">
-        <div class="calc-body_price">
-            <h5>Цена:</h5>
-            <input type="text" disabled value="0р">
+        <ul class="collection">
+            <li class="collection-item">
+                <div class="calc_inp row s12">
+                    <h6 class="col s6">Общая длинна ленты <strong>(м)</strong></h6>
+                    <div class="input-field col s6">
+                        <input placeholder="0" id="count" type="text" class="validate" pattern="[0-9\.]*">
+                    </div>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div class="calc_inp row s12">
+                    <h6 class="col s6">Ширина ленты <strong>(м)</strong></h6>
+                    <div class="input-field col s6">
+                        <input placeholder="0" id="width" type="text" class="validate" pattern="[0-9\.]*">
+                    </div>
+                </div>
+            </li>
+            <li class="collection-item">
+                <div class="calc_inp row s12">
+                    <h6 class="col s6">Высота ленты <strong>(м)</strong></h6>
+                    <div class="input-field col s6">
+                        <input placeholder="0" id="height" type="text" class="validate" pattern="[0-9\.]*">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="calc-body_size row s12">
+            <h5 class="col s6">Объем:</h5>
+            <input class="col s6" type="text" disabled value="0 м3">
+        </div>
+        <div class="calc-body_price row s12">
+            <h5 class="col s6">Цена:</h5>
+            <input class="col s6" type="text" disabled value="0 р">
         </div>
     </div>
     <button class="btn">Подробнее</button>

@@ -147,6 +147,8 @@ ul {
     text-align: center;
 }
 
+/* Price */
+
 .price {
     margin-top: 8vh;
 }
@@ -174,6 +176,9 @@ ul {
 .price li:hover {
     background-color: #f1f1f1;
 }
+
+
+/* Advantages */
 
 .advantages {
     margin-top: 5vh;
@@ -223,6 +228,9 @@ ul {
     font-size: 1.5em;
 }
 
+
+/* Kontakts */
+
 .kontakts {
     margin-top: 5vh;
     display: flex;
@@ -245,6 +253,9 @@ ul {
 .kontakts_block :last-child {
     margin-left: 1vw;
 }
+
+
+/* Calcul */
 
 .calc {
     display: grid;
@@ -276,15 +287,32 @@ option {
     grid-column: 2/3;
 }
 
+.calc-body .collection-item {
+    display: flex;
+    height: 8vh;
+    justify-content: space-between;
+}
+
+.calc_inp {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.calc-body .row {
+    margin-bottom: 0;
+}
+
+.calc_inp h6 {
+    text-align: start;
+}
+
 .dropdown-content li>span {
     color: #0070bb;
     text-align: center;
 }
 
-.calc-body_price {
-    margin-top: 5vh;
-}
-
+/* footer */
 
 .footer {
     margin-top: 5vh;
@@ -304,4 +332,41 @@ option {
 .footer-cont,
 .footer-cont a {
     color: white;
+}
+
+/* Modals */
+
+.modal-wrapper {
+    position: fixed;
+    flex-direction: row;
+    display: none;
+    justify-content: center;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(70, 70, 70, 0.856);
+    top: 0;
+}
+
+.modal-ok {
+    position: relative;
+    font-size: 1.2em;
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    height: 20vh;
+    background-color: #fff;
+}
+
+.modal-ok .modal-content {
+    text-align: center;
+}
+
+.modal-ok button {
+    position: absolute;
+    right: 0;
+    bottom: 0vh;
 }

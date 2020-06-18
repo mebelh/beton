@@ -23,11 +23,8 @@ formBtn.addEventListener("click", async (e) => {
         });
         setTimeout(() => {
             window.location.reload();
-        }, 3000);
+        }, 4000);
     }
-});
-$(document).ready(function () {
-    $(".modal").modal();
 });
 
 const price = [
@@ -42,3 +39,20 @@ const price = [
 ];
 
 export default price;
+
+// modal
+const modalWrap = document.querySelector(".modal-wrapper");
+const modal = document.querySelector(".modal");
+
+const modalTrig = document.querySelector(".modal-trigger");
+
+document.addEventListener("click", (e) => {
+    if (
+        e.target.classList.contains("modal-trigger") &&
+        name.value !== "" &&
+        phone.value !== ""
+    ) {
+        modalWrap.style.display =
+            modalWrap.style.display === "flex" ? "none" : "flex";
+    }
+});
