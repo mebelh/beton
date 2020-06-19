@@ -155,9 +155,9 @@ nav {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 2vh;
+    border-radius: 2em;
     width: 40vh;
-    height: 45vh;
+    /* height: auto; */
     padding: 2vh;
 }
 
