@@ -92,7 +92,7 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-top: 2vh;
+    margin-top: 3vh;
     height: 55vh;
     background: #d8d8d8 url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
     background-size: 100%;
@@ -179,7 +179,7 @@ ul {
 }
 
 .info {
-    margin-top: 5vh;
+    margin-top: 3vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -214,7 +214,7 @@ ul {
 /* Price */
 
 .price {
-    margin-top: 8vh;
+    margin-top: 4vh;
 }
 
 .price .collection-header {
@@ -249,7 +249,7 @@ ul {
 /* Advantages */
 
 .advantages {
-    margin-top: 5vh;
+    margin-top: 3vh;
     font-size: 1.2em;
     display: -webkit-box;
     display: -ms-flexbox;
