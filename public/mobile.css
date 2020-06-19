@@ -191,6 +191,10 @@
         text-align: center;
     }
 
+    .calc-body ul li {
+        height: 20vh;
+    }
+
     .footer {
         height: 15vh;
     }

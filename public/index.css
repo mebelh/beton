@@ -419,7 +419,7 @@ option {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 8vh;
+    height: 9vh;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
