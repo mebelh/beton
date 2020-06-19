@@ -41,5 +41,11 @@ const form = document.querySelector(".form-call-me");
 
 buttonCalcCall.addEventListener("click", () => {
     form.scrollIntoView();
+    window.scrollTo(
+        0,
+        Math.floor(
+            (window.pageYOffset || document.documentElement.scrollTop) / 3
+        )
+    );
     // window.scrollTo(0, Math.floor(form.getBoundingClientRect().y) * -1);
 });
