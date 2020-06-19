@@ -87,8 +87,8 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-top: 7vh;
-    height: 50vh;
+    margin-top: 2vh;
+    height: 55vh;
     background: #d8d8d8 url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
     background-size: 100%;
     background-position: center;
@@ -158,7 +158,7 @@ nav {
     border-radius: 2em;
     width: 40vh;
     /* height: auto; */
-    padding: 2vh;
+    padding: 1em;
 }
 
 .form-call-me button {
@@ -523,14 +523,31 @@ option {
 
 @media (max-width: 1300px) {
 
-    .info-img img,
+    .baner {
+        height: 60vh;
+    }
+
+    .baner-text {
+        text-align: center;
+    }
+
+    .form-call-me {
+        width: 50vh;
+    }
+
     .advantages img {
-        width: 20vw;
-        height: 20vw;
+        width: 25vw;
+        height: 25vw;
         -webkit-box-shadow: 0 0 10px #0084ff49;
         box-shadow: 0 0 10px #0084ff49;
         border-radius: 20px;
     }
+
+    .info-img img {
+        width: 30vw;
+        height: auto;
+    }
+
 
     .advantages-end {
         display: -webkit-box;
@@ -548,6 +565,10 @@ option {
 
 @media (max-width: 1080px) {
 
+    .top-lay li a {
+        font-size: .7em;
+    }
+
     .advantages {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -559,6 +580,10 @@ option {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+
+    .advantages-text {
+        width: 70%;
     }
 
     .info-img img,
@@ -584,5 +609,4 @@ option {
     .info-text {
         width: 100%;
     }
-
 }
