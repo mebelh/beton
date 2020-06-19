@@ -64,6 +64,14 @@ nav {
     justify-content: space-between;
 }
 
+.top-lay img {
+    width: 100%;
+}
+
+.top-lay li h5 {
+    color: #ffae00;
+}
+
 .logo,
 .logo:hover {
     -webkit-transition: ease 0.4s;
@@ -75,9 +83,6 @@ nav {
     color: #008cff;
 }
 
-.top-lay img {
-    width: 100%;
-}
 
 .baner {
     display: -webkit-box;

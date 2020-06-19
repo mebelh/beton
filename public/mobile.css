@@ -16,6 +16,7 @@
 
     .top-lay li h2 {
         margin-top: 0;
+        margin-bottom: 0;
     }
 
     .top-lay a {
@@ -24,6 +25,11 @@
 
     .top-lay h1 {
         font-size: 4em;
+    }
+
+    .top-lay h5 {
+        margin-top: 0;
+        font-size: 1.1em;
     }
 
     .baner {
@@ -37,7 +43,7 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .form-call-me {
@@ -56,7 +62,9 @@
         margin-top: 5vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        justify-content: space-evenly;
     }
 
     .info h4 {
@@ -102,22 +110,30 @@
     }
 
     .price li:first-child {
-        height: 15vh;
-        font-size: 1em;
+        height: 13vh;
     }
 
     .price li:first-child h5 {
-        font-size: 1.3em;
+        font-size: .9em;
+        width: 100%;
+        text-align: center;
     }
 
     .advantages {
-        margin-top: 5vh;
+        margin-top: 2vh;
         font-size: 1.2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-left: 2vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .advantages-text {
+        width: 100%;
+        margin-left: 4vw;
     }
 
     .advantages-end .advantages-text {
@@ -135,7 +151,7 @@
     }
 
     .advantages ul li {
-        list-style: circle;
+        list-style: none;
         margin-top: 1vh;
     }
 
@@ -199,4 +215,19 @@
     .footer-cont a {
         color: white;
     }
+}
+
+@media (max-width: 320px) {
+    .baner-text_big {
+        font-size: 1.7em;
+    }
+
+    .form-call-me {
+        margin-top: 0;
+        height: auto;
+    }
+
+    /* .baner-content {
+        justify-content: space-evenly;
+    } */
 }
