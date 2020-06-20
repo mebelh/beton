@@ -87,7 +87,7 @@
         align-items: center;
         border-radius: 2vh;
         width: 95vw;
-        height: 50vh;
+        height: auto;
         padding: 2vh;
         margin-bottom: 2vh;
     }
