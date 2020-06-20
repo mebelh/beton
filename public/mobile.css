@@ -5,14 +5,28 @@
     }
 
     .navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
     .top-lay {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
         margin-bottom: 2vh;
@@ -43,17 +57,33 @@
     }
 
     .baner-content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
     }
 
     .form-call-me {
         background-color: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         border-radius: 2vh;
         width: 95vw;
@@ -64,10 +94,19 @@
 
     .info {
         margin-top: 5vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
         justify-content: space-evenly;
     }
 
@@ -80,6 +119,7 @@
         margin-top: 2em;
         width: 90vw;
         height: auto;
+        -webkit-box-shadow: 0 0 10px #0084ff49;
         box-shadow: 0 0 10px #0084ff49;
         border-radius: 20px;
         margin-left: 0;
@@ -105,11 +145,15 @@
     }
 
     .price ul li {
+        display: -ms-grid;
         display: grid;
         height: 7vh;
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         font-weight: bold;
         font-size: 1.2em;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         text-align: center;
     }
@@ -126,9 +170,18 @@
 
     .advantages {
         margin-top: 2vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-left: auto;
         margin-right: auto;
@@ -158,8 +211,15 @@
     }
 
     .advantages-blocks .advantages-text ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -178,7 +238,12 @@
 
     .kontakts {
         margin-top: 5vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -204,7 +269,9 @@
     }
 
     .calc {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 50fr 1fr;
         grid-template-columns: 1fr 50fr 1fr;
     }
 
@@ -227,8 +294,12 @@
 
     .footer-cont {
         height: 100%;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
     }
 

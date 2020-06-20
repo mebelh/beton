@@ -189,6 +189,8 @@ ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -268,6 +270,8 @@ ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -315,8 +319,12 @@ ul {
 /* Advantages blocks */
 
 .advantages-blocks ul {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    -webkit-column-gap: 1em;
+    -moz-column-gap: 1em;
     column-gap: 1em;
 }
 
@@ -324,6 +332,7 @@ ul {
     border: 1px solid #1d16007e;
     padding: 1em;
     border-radius: 1em;
+    -webkit-box-shadow: 0 0 2px #806e064f;
     box-shadow: 0 0 2px #806e064f;
 }
 
@@ -335,6 +344,8 @@ ul {
 
 .advantages-blocks ul li i {
     font-size: 2em;
+    -webkit-transform: translateY(.3em);
+    -ms-transform: translateY(.3em);
     transform: translateY(.3em);
 }
 
