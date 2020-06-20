@@ -1,5 +1,9 @@
 @media (max-width: 414px) {
 
+    .container {
+        width: 90%;
+    }
+
     .navbar {
         display: flex;
         flex-direction: row;
@@ -78,10 +82,11 @@
         height: auto;
         box-shadow: 0 0 10px #0084ff49;
         border-radius: 20px;
+        margin-left: 0;
     }
 
     .info-text {
-        width: 90vw;
+        width: 95vw;
         font-size: 1.2em;
         text-align: unset;
     }
@@ -90,16 +95,16 @@
         text-align: center;
     }
 
-    .price {
+    .price ul {
         margin-top: 5vh;
     }
 
-    .price .collection-header {
+    .price ul .collection-header {
         color: #067bdb;
         font-weight: bold;
     }
 
-    .price li {
+    .price ul li {
         display: grid;
         height: 7vh;
         grid-template-columns: 1fr 1fr 1fr;
@@ -109,11 +114,11 @@
         text-align: center;
     }
 
-    .price li:first-child {
+    .price ul li:first-child {
         height: 13vh;
     }
 
-    .price li:first-child h5 {
+    .price ul li:first-child h5 {
         font-size: .9em;
         width: 100%;
         text-align: center;
@@ -133,26 +138,29 @@
 
     .advantages-text {
         width: 100%;
-        margin-left: 4vw;
     }
 
     .advantages-end .advantages-text {
         font-size: 1.2em;
     }
 
-    .advantages-text strong {
-        font-size: 1.2em;
-        color: #003158;
-    }
-
     .advantages h4 {
-        color: #008cff;
         text-align: center;
     }
 
     .advantages ul li {
         list-style: none;
         margin-top: 1vh;
+    }
+
+    .advantages-blocks h4 {
+        font-size: 1.7em;
+    }
+
+    .advantages-blocks .advantages-text ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .kontakts {
@@ -217,6 +225,8 @@
     }
 }
 
+@media (max-width: 320px) {}
+
 @media (max-width: 320px) {
     .baner-text_big {
         font-size: 1.7em;
@@ -226,8 +236,4 @@
         margin-top: 0;
         height: auto;
     }
-
-    /* .baner-content {
-        justify-content: space-evenly;
-    } */
 }

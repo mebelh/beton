@@ -4,17 +4,17 @@
 }
 
 input:not([type]):focus:not([readonly]),
-input[type=text]:not(.browser-default):focus:not([readonly]),
-input[type=password]:not(.browser-default):focus:not([readonly]),
-input[type=email]:not(.browser-default):focus:not([readonly]),
-input[type=url]:not(.browser-default):focus:not([readonly]),
-input[type=time]:not(.browser-default):focus:not([readonly]),
-input[type=date]:not(.browser-default):focus:not([readonly]),
-input[type=datetime]:not(.browser-default):focus:not([readonly]),
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]),
-input[type=tel]:not(.browser-default):focus:not([readonly]),
-input[type=number]:not(.browser-default):focus:not([readonly]),
-input[type=search]:not(.browser-default):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #008cff;
     -webkit-box-shadow: 0 1px 0 0 #008cff;
@@ -82,7 +82,6 @@ nav {
 .logo:hover {
     color: #008cff;
 }
-
 
 .baner {
     display: -webkit-box;
@@ -167,7 +166,7 @@ nav {
 }
 
 .form-call-me button {
-    background-color: #039BE5;
+    background-color: #039be5;
 }
 
 .form-call-me button:hover {
@@ -179,7 +178,7 @@ ul {
 }
 
 .info {
-    margin-top: 3vh;
+    margin-top: 6vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -190,6 +189,7 @@ ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    align-items: center;
 }
 
 .info h4 {
@@ -198,31 +198,40 @@ ul {
 
 .info-img img,
 .advantages img {
-    width: 30vw;
-    height: auto;
+    width: 25vw;
+    margin-left: 1vw;
     -webkit-box-shadow: 0 0 10px #0084ff49;
     box-shadow: 0 0 10px #0084ff49;
     border-radius: 20px;
+    margin-left: 2em;
 }
 
 .info-text {
-    width: 30vw;
+    width: 35vw;
     font-size: 1.2em;
     text-align: center;
 }
 
-/* Price */
+/* price */
 
-.price {
-    margin-top: 4vh;
+.price ul {
+    margin-top: 2vh;
 }
 
-.price .collection-header {
+.price h4 {
+    margin-top: 6vh;
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 0;
+    color: #067bdb;
+}
+
+.price ul .collection-header {
     color: #067bdb;
     font-weight: bold;
 }
 
-.price li {
+.price ul li {
     display: -ms-grid;
     display: grid;
     height: 7vh;
@@ -236,20 +245,18 @@ ul {
     text-align: center;
 }
 
-.price li:first-child {
+.price ul li:first-child {
     height: 10vh;
-    /* color: #f0f0f0 */
 }
 
-.price li:hover {
+.pric ul li:hover {
     background-color: #f1f1f1;
 }
-
 
 /* Advantages */
 
 .advantages {
-    margin-top: 3vh;
+    margin-top: 5vh;
     font-size: 1.2em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -261,23 +268,17 @@ ul {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-}
-
-.advantages-text {
-    margin-right: 3vh;
+    align-items: center;
 }
 
 .advantages h4 {
     color: #008cff;
+    font-size: 2.6em;
+    margin-bottom: .5em;
 }
 
 .advantages ul li {
-    list-style: circle;
     margin-top: 1vh;
-}
-
-.advantages-text {
-    margin-right: 3vh;
 }
 
 .advantages-text p {
@@ -311,6 +312,31 @@ ul {
     font-size: 1.5em;
 }
 
+/* Advantages blocks */
+
+.advantages-blocks ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1em;
+}
+
+.advantages-blocks ul li {
+    border: 1px solid #1d16007e;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 2px #806e064f;
+}
+
+.advantages-blocks ul li i,
+.advantages-blocks h4 {
+    color: #ff9100;
+    text-align: center;
+}
+
+.advantages-blocks ul li i {
+    font-size: 2em;
+    transform: translateY(.3em);
+}
 
 /* Kontakts */
 
@@ -344,13 +370,12 @@ ul {
     margin-left: 1vw;
 }
 
-
 /* Calcul */
 
 .calc {
     display: -ms-grid;
     display: grid;
-    margin-top: 7vh;
+    margin-top: 5vh;
     -ms-grid-columns: 1fr 3fr 1fr;
     grid-template-columns: 1fr 3fr 1fr;
     -ms-grid-rows: 4fr 1fr;
@@ -386,7 +411,6 @@ ul {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
 }
-
 
 .calc button {
     margin-top: 5vh;
@@ -527,7 +551,6 @@ option {
 }
 
 @media (max-width: 1300px) {
-
     .baner {
         height: 60vh;
     }
@@ -553,7 +576,6 @@ option {
         height: auto;
     }
 
-
     .advantages-end {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -568,10 +590,15 @@ option {
     }
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+}
 
+@media (max-width: 1080px) {
     .top-lay li a {
-        font-size: .7em;
+        font-size: 0.7em;
     }
 
     .advantages {
@@ -585,10 +612,6 @@ option {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    }
-
-    .advantages-text {
-        width: 70%;
     }
 
     .info-img img,

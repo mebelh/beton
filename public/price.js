@@ -2,7 +2,7 @@
 
 import price from "./app.js";
 
-const priceTab = document.querySelector(".price");
+const priceTab = document.querySelector(".price ul");
 
 price.forEach((e, index) => {
     const elem = document.createElement("li");
