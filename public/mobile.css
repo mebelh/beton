@@ -52,7 +52,7 @@
 
     .baner {
         margin-top: 2vh;
-        height: 85vh;
+        height: auto;
         background-size: 300%;
     }
 
