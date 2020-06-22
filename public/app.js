@@ -55,6 +55,9 @@ document.addEventListener("click", (e) => {
     if (e.target.classList.contains("Blondie")) {
         fetch(`/clic/phone`, {
             method: "POST",
+            headers: {
+                inf: `${navigator.userAgent}`,
+            },
         });
     }
 });
