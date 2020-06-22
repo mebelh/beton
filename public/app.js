@@ -42,9 +42,6 @@ export default price;
 
 // modal
 const modalWrap = document.querySelector(".modal-wrapper");
-const modal = document.querySelector(".modal");
-
-const modalTrig = document.querySelector(".modal-trigger");
 
 document.addEventListener("click", (e) => {
     if (
@@ -54,5 +51,10 @@ document.addEventListener("click", (e) => {
     ) {
         modalWrap.style.display =
             modalWrap.style.display === "flex" ? "none" : "flex";
+    }
+    if (e.target.classList.contains("Blondie")) {
+        fetch(`/clic/phone`, {
+            method: "POST",
+        });
     }
 });
