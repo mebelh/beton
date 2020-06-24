@@ -14,11 +14,11 @@ const kontaktsRout = require("./routs/kontakts");
 const calcRout = require("./routs/calc");
 
 const MONGO_URI =
-    "mongodb+srv://memet:12345@cluster0-mjl6h.mongodb.net/<dbname>?retryWrites=true&w=majority";
+    "mongodb+srv://memet:12345@cluster0-mjl6h.mongodb.net/SimfBeton?retryWrites=true&w=majority";
 
 const store = new MongoStore({
     uri: MONGO_URI,
-    collection: "session",
+    collection: "sessions",
 });
 
 const PORT = 80;

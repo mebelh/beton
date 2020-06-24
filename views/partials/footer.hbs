@@ -1,3 +1,9 @@
+<script src="app-viewpoint-cange.js" type="module"></script>
+
+{{#if isTodo}}
+<script src="todo.js" type="module"></script>
+
+{{else}}
 <div class="footer">
     <div class="footer-cont container">
         <h6>ООО "Строим Как Себе"</h6>
@@ -11,7 +17,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <script src="app.js" type="module"></script>
-
+{{/if}}
 
 {{#if isCalc}}
 <script src="calc.js" type="module"></script>

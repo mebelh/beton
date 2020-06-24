@@ -1,17 +1,3 @@
-setTimeout(function () {
-    let viewheight = $(window).height();
-    let viewwidth = $(window).width();
-    let viewport = document.querySelector("meta[name=viewport]");
-    viewport.setAttribute(
-        "content",
-        "height=" +
-            viewheight +
-            "px, width=" +
-            viewwidth +
-            "px, initial-scale=1.0"
-    );
-}, 300);
-
 const formBtn = document.querySelector(".baner_btn");
 const name = document.querySelector(".form_name");
 const phone = document.querySelector(".form_phone");
