@@ -20,6 +20,9 @@ formBtn.addEventListener("click", async (e) => {
     if (name.value !== "" && phone.value !== "") {
         fetch(`/${name.value}/${phone.value}`, {
             method: "POST",
+            headers: {
+                inf: `${navigator.userAgent}`,
+            },
         });
         setTimeout(() => {
             window.location.reload();
