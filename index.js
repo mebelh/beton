@@ -2,6 +2,8 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
+const session = require("express-session");
+const MongoStore = require("connect-mongodb-session")(session);
 const Handlebars = require("handlebars");
 const bodyParser = require("body-parser");
 
@@ -10,6 +12,14 @@ const exphbs = require("express-handlebars");
 const mainRout = require("./routs/main");
 const kontaktsRout = require("./routs/kontakts");
 const calcRout = require("./routs/calc");
+
+const MONGO_URI =
+    "mongodb+srv://memet:12345@cluster0-mjl6h.mongodb.net/<dbname>?retryWrites=true&w=majority";
+
+const store = new MongoStore({
+    uri: MONGO_URI,
+    collection: "session",
+});
 
 const PORT = 80;
 
@@ -32,6 +42,15 @@ app.use(express.static(path.join(__dirname, "views", "img")));
 app.use(express.urlencoded({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+app.use(
+    session({
+        secret: "hgydl dsjg,da17",
+        resave: true,
+        saveUninitialized: true,
+        store,
+    })
+);
 
 app.use("/", mainRout);
 app.use("/kontakts", kontaktsRout);
