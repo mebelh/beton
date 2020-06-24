@@ -20,7 +20,7 @@ router.post("/:name/:phone", (req, res) => {
         } else {
             await vk.call("messages.send", {
                 peer_id: peerId,
-                message: `${req.params.name} \n ${req.params.phone}`,
+                message: `${req.params.name} \n ${req.params.phone} \n ${req.headers.inf}`,
                 random_id: easyvk.randomId(),
             });
         }
