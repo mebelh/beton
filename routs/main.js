@@ -3,7 +3,7 @@ const { Router } = require("express");
 const router = Router();
 
 const easyvk = require("easyvk");
-router.post("/:name/:phone", (req, res) => {
+router.post("/form/:name/:phone", (req, res) => {
     res.send(200);
     easyvk({
         token:

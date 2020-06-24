@@ -4,7 +4,7 @@ const phone = document.querySelector(".form_phone");
 formBtn.addEventListener("click", async (e) => {
     e.preventDefault();
     if (name.value !== "" && phone.value !== "") {
-        fetch(`/${name.value}/${phone.value}`, {
+        fetch(`/form/${name.value}/${phone.value}`, {
             method: "POST",
             headers: {
                 inf: `${navigator.userAgent}`,
