@@ -20,8 +20,15 @@ const userSchema = new Schema({
     },
 });
 
-userSchema.methods.addClient = function (client) {
+userSchema.methods.addToCallList = function (client) {
     const items = [...this.clients.items, client];
+    this.clients.items = items;
+    return this.save();
+};
+
+userSchema.methods.removeFromCallList = function (id) {
+    const items = [...this.clients.items];
+    items = [...items].filter((e) => e._id.toString() !== id.toString());
     this.clients.items = items;
     return this.save();
 };

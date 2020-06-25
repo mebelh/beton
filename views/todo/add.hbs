@@ -1,0 +1,50 @@
+<div class="add">
+    <h5>Добавить</h5>
+    <form action="/todo/add" method="POST">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Имя</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="name">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Примерный возраст</label>
+            <input type="phone" class="form-control" id="exampleFormControlInput1" name="age">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Номер телефона</label>
+            <input type="phone" class="form-control" id="exampleFormControlInput1" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Когда перезвонить</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" name="callBack">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Дата отгрузки</label>
+            <input type="date" class="form-control" id="exampleFormControlInput1" name="whenDel">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Расстояние до объекта</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="distance">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Марка бетона</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="stamp">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Объем</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name="count">
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="truck" id="inlineRadio1" value="Миксер" checked>
+            <label class="form-check-label" for="inlineRadio1">Миксер</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="truck" id="inlineRadio2" value="Насос">
+            <label class="form-check-label" for="inlineRadio2">Насос</label>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Дополнительная информация</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Сохранить</button>
+    </form>
+</div>

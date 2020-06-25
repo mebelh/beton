@@ -1,0 +1,83 @@
+<div class="accordion" id="accordionExample">
+    {{#each clients}}
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#s{{id}}"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    {{name}}
+                    {{callBack}}
+                </button>
+            </h2>
+        </div>
+
+        <div id="s{{id}}" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+
+                <ul class="list-group">
+
+                    {{#if name}}
+                    <li class="list-group-item">
+                        <div class="todo-inf-group">
+                            <span>
+                                <h6>Имя:</h6>
+                            </span> <span>{{name}}</span>
+                        </div>
+                    </li>
+                    {{/if}}
+
+                    <li class="list-group-item">
+                        <div class="todo-inf-group">
+                            <span>
+                                <h6>Телефон:</h6>
+                            </span> <span>{{phone}}</span>
+                        </div>
+                    </li>
+
+                    <li class="list-group-item">
+                        <div class="todo-inf-group"><span>
+                                <h6>Когда звонил:</h6>
+                            </span> <span>{{call}}</span></div>
+                    </li>
+
+                    {{#if callBack}}
+                    <li class="list-group-item">
+                        <div class="todo-inf-group"><span>
+                                <h6>Перезвонить:</h6>
+                            </span> <span>{{callBack}}</span></div>
+                    </li>
+
+                    {{/if}}
+
+                    {{#if stamp}}
+                    <li class="list-group-item">
+                        <div class="todo-inf-group"><span>
+                                <h6>Марка бетона:</h6>
+                            </span> <span>{{stamp}}</span></div>
+                    </li>
+                    {{/if}}
+
+                    {{#if count}}
+                    <li class="list-group-item">
+                        <div class="todo-inf-group">
+                            <span>
+                                <h6>Объем:</h6>
+                            </span> <span>{{count}}</span>
+                        </div>
+                    </li>
+                    {{/if}}
+                    <li class="list-group-item">
+                        <div class="todo-inf-group">
+                            <span>
+                                <h6>Машина:</h6>
+                            </span> <span>{{truck}}</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<a href="/todo/add" class="btn btn-info">Добавить клиента</a>

@@ -3,6 +3,7 @@ const path = require("path");
 
 const app = express();
 const session = require("express-session");
+const mongoose = require("mongoose");
 const MongoStore = require("connect-mongodb-session")(session);
 const Handlebars = require("handlebars");
 const bodyParser = require("body-parser");
@@ -58,8 +59,24 @@ app.use("/kontakts", kontaktsRout);
 app.use("/calc", calcRout);
 app.use("/todo", todoRout);
 
+const User = require("./models/user");
+const bcrypt = require("bcrypt");
+
 const start = async () => {
     try {
+        mongoose.connect(MONGO_URI, {
+            useUnifiedTopology: true,
+            useNewUrlParser: true,
+            useFindAndModify: false,
+        });
+        const admin = await User.findOne();
+        if (!admin) {
+            const user = new User({
+                login: "admin",
+                password: await bcrypt.hash("admin", 12),
+            });
+            await user.save();
+        }
         app.listen(PORT, () => {
             console.log(`Server has been started on ${PORT}.`);
         });

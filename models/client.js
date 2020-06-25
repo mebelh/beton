@@ -27,19 +27,22 @@ const clientSchema = new Schema({
     },
     truck: {
         type: String,
-        default: "mix",
+        default: "Миксер",
     },
     call: {
         type: Date,
         default: new Date(),
     },
     callBack: {
-        type: Date,
+        type: String,
     },
     whenDel: {
-        type: Date,
+        type: String,
     },
     description: {
+        type: String,
+    },
+    id: {
         type: String,
     },
 });
