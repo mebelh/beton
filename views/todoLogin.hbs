@@ -1,1 +1,19 @@
-login
+<div class="login">
+    <form action="/todo/login" method="POST">
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Логин</span>
+            </div>
+            <input type="text" class="form-control" id="login" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Пароль</span>
+            </div>
+            <input type="password" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm">
+        </div>
+        <button type="button" class="btn btn-success">Войти</button>
+    </form>
+</div>
