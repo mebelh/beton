@@ -2,7 +2,7 @@ const { Router } = require("express");
 const router = Router();
 
 router.get("/", (req, res) => {
-    if (!req.session.isAuthentificated) {
+    if (req.session.isAuthentificated) {
         res.render("../views/todo.hbs", {
             title: "Менеджер клиентов",
             isTodo: true,
@@ -20,5 +20,7 @@ router.get("/login", (req, res) => {
         layout: "todo",
     });
 });
+
+router.post("/login", (req, res) => {});
 
 module.exports = router;
