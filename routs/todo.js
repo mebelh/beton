@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const router = Router();
+const bcrypt = require("bcrypt");
 
 router.get("/", (req, res) => {
     if (req.session.isAuthentificated) {
@@ -21,6 +22,8 @@ router.get("/login", (req, res) => {
     });
 });
 
-router.post("/login", (req, res) => {});
+router.post("/login", async (req, res) => {
+    // const candidate =
+});
 
 module.exports = router;
