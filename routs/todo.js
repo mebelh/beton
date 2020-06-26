@@ -10,10 +10,11 @@ const Client = require("../models/client");
 router.get("/", async (req, res) => {
     if (req.session.isAuthentificated) {
         const clients = await Client.find().lean();
-        res.render("../views/todo/todo.hbs", {
+        res.render("../views/todo/allClients.hbs", {
             title: "Менеджер клиентов",
             isTodo: true,
             layout: "todo",
+            all: true,
             clients: clients.map((e) => {
                 return {
                     ...e,
@@ -24,6 +25,110 @@ router.get("/", async (req, res) => {
                     }).format(e.call),
                 };
             }),
+        });
+    } else {
+        res.redirect("/todo/login");
+    }
+});
+
+router.get("/callToday", async (req, res) => {
+    if (req.session.isAuthentificated) {
+        const clients = await Client.find().lean();
+        res.render("../views/todo/allClients.hbs", {
+            title: "Менеджер клиентов",
+            isTodo: true,
+            layout: "todo",
+            callToday: true,
+            clients: clients
+                .map((e) => {
+                    return {
+                        ...e,
+                        call: Intl.DateTimeFormat("ru-RU", {
+                            year: "numeric",
+                            day: "numeric",
+                            month: "numeric",
+                        }).format(e.call),
+                    };
+                })
+                .filter(
+                    (e) =>
+                        e.callBack ===
+                        Intl.DateTimeFormat("ru-RU", {
+                            year: "numeric",
+                            day: "numeric",
+                            month: "numeric",
+                        }).format(new Date())
+                ),
+        });
+    } else {
+        res.redirect("/todo/login");
+    }
+});
+
+router.get("/workToday", async (req, res) => {
+    if (req.session.isAuthentificated) {
+        const clients = await Client.find().lean();
+        res.render("../views/todo/allClients.hbs", {
+            title: "Менеджер клиентов",
+            isTodo: true,
+            layout: "todo",
+            workToday: true,
+            clients: clients
+                .map((e) => {
+                    return {
+                        ...e,
+                        call: Intl.DateTimeFormat("ru-RU", {
+                            year: "numeric",
+                            day: "numeric",
+                            month: "numeric",
+                        }).format(e.call),
+                    };
+                })
+                .filter(
+                    (e) =>
+                        e.whenDel ===
+                        Intl.DateTimeFormat("ru-RU", {
+                            year: "numeric",
+                            day: "numeric",
+                            month: "numeric",
+                        }).format(new Date())
+                ),
+        });
+    } else {
+        res.redirect("/todo/login");
+    }
+});
+
+router.get("/workTomorrow", async (req, res) => {
+    if (req.session.isAuthentificated) {
+        const clients = await Client.find().lean();
+        res.render("../views/todo/allClients.hbs", {
+            title: "Менеджер клиентов",
+            isTodo: true,
+            layout: "todo",
+            workTomorrow: true,
+            clients: clients
+                .map((e) => {
+                    return {
+                        ...e,
+                        call: Intl.DateTimeFormat("ru-RU", {
+                            year: "numeric",
+                            day: "numeric",
+                            month: "numeric",
+                        }).format(e.call),
+                    };
+                })
+                .filter(
+                    (e) =>
+                        e.whenDel ===
+                        Intl.DateTimeFormat("ru-RU", {
+                            year: "numeric",
+                            day: "numeric",
+                            month: "numeric",
+                        }).format(
+                            new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+                        )
+                ),
         });
     } else {
         res.redirect("/todo/login");
@@ -63,11 +168,13 @@ router.post("/add", async (req, res) => {
         name,
         age,
         phone,
-        whenDel: Intl.DateTimeFormat("ru-RU", {
-            year: "numeric",
-            day: "numeric",
-            month: "numeric",
-        }).format(new Date(whenDel)),
+        whenDel: whenDel
+            ? Intl.DateTimeFormat("ru-RU", {
+                  year: "numeric",
+                  day: "numeric",
+                  month: "numeric",
+              }).format(new Date(whenDel))
+            : "",
         callBack: Intl.DateTimeFormat("ru-RU", {
             year: "numeric",
             day: "numeric",

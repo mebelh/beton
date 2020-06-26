@@ -7,18 +7,45 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+                {{#if all}}
                 <li class="nav-item active">
                     <a class="nav-link" href="/todo">Все клиенты<span class="sr-only">(current)</span></a>
                 </li>
+                {{else}}
+                <li class="nav-item">
+                    <a class="nav-link" href="/todo">Все клиенты<span class="sr-only">(current)</span></a>
+                </li>
+                {{/if}}
+
+                {{#if callToday}}
+                <li class="nav-item active">
+                    <a class="nav-link" href="/todo/callToday">Позвонить сегодня</a>
+                </li>
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link" href="/todo/callToday">Позвонить сегодня</a>
                 </li>
+                {{/if}}
+
+                {{#if workToday}}
+                <li class="nav-item active">
+                    <a class="nav-link" href="/todo/workToday">Работа на сегодня</a>
+                </li>
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link" href="/todo/workToday">Работа на сегодня</a>
                 </li>
+                {{/if}}
+
+                {{#if workTomorrow}}
+                <li class="nav-item active">
+                    <a class="nav-link" href="/todo/workTomorrow">Работа на завтра</a>
+                </li>
+                {{else}}
                 <li class="nav-item">
                     <a class="nav-link" href="/todo/workTomorrow">Работа на завтра</a>
                 </li>
+                {{/if}}
             </ul>
         </div>
     </div>

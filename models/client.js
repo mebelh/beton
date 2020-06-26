@@ -38,6 +38,7 @@ const clientSchema = new Schema({
     },
     whenDel: {
         type: String,
+        default: "0",
     },
     description: {
         type: String,

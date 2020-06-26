@@ -24,6 +24,7 @@
 
 .add {
     margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 .add > :first-child {
     text-align: center;
@@ -41,4 +42,8 @@
 .accordion {
     margin-top: 3vh;
     margin-bottom: 3vh;
+}
+
+button :last-child {
+    float: right;
 }

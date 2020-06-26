@@ -5,8 +5,8 @@
             <h2 class="mb-0">
                 <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#s{{id}}"
                     aria-expanded="true" aria-controls="collapseOne">
-                    {{name}}
-                    {{callBack}}
+                    <span class="">{{name}}</span>
+                    <span class="">{{callBack}}</span>
                 </button>
             </h2>
         </div>
@@ -30,7 +30,7 @@
                         <div class="todo-inf-group">
                             <span>
                                 <h6>Телефон:</h6>
-                            </span> <span>{{phone}}</span>
+                            </span> <span><a href="tel:+{{phone}}" class="Blondie">+{{phone}}</a></span>
                         </div>
                     </li>
 
@@ -40,11 +40,11 @@
                             </span> <span>{{call}}</span></div>
                     </li>
 
-                    {{#if callBack}}
+                    {{#if whenDel}}
                     <li class="list-group-item">
                         <div class="todo-inf-group"><span>
-                                <h6>Перезвонить:</h6>
-                            </span> <span>{{callBack}}</span></div>
+                                <h6>Отгрузка:</h6>
+                            </span> <span>{{whenDel}}</span></div>
                     </li>
 
                     {{/if}}
