@@ -23,7 +23,8 @@ const price = [
     { name: "M250", strong: "B20", price: "3700р" },
     { name: "M300", strong: "B22.5", price: "4050р" },
     { name: "M350", strong: "B25", price: "4300р" },
-    { name: "M400", strong: "B30", price: "4500р" },
+    { name: "M400", strong: "B30", price: "4600р" },
+    { name: "M450", strong: "B35", price: "5150р" },
     { name: "M500", strong: "B40", price: "6000р" },
 ];
 

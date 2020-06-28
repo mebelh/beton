@@ -140,20 +140,28 @@ router.get("/workTomorrow", async (req, res) => {
 });
 
 router.get("/login", (req, res) => {
-    res.render("../views/todo/todoLogin.hbs", {
-        title: "Менеджер клиентов авторизация",
-        isTodo: true,
-        isLogin: true,
-        layout: "todo",
-    });
+    if (req.session.isAuthentificated) {
+        res.redirect("/");
+    } else {
+        res.render("../views/todo/todoLogin.hbs", {
+            title: "Менеджер клиентов авторизация",
+            isTodo: true,
+            isLogin: true,
+            layout: "todo",
+        });
+    }
 });
 
 router.get("/add", (req, res) => {
-    res.render("../views/todo/add.hbs", {
-        title: "Добавить клиента",
-        isTodo: true,
-        layout: "todo",
-    });
+    if (req.session.isAuthentificated) {
+        res.render("../views/todo/add.hbs", {
+            title: "Добавить клиента",
+            isTodo: true,
+            layout: "todo",
+        });
+    } else {
+        res.redirect("/todo/login");
+    }
 });
 
 router.post("/add", async (req, res) => {
