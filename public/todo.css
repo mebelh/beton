@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 94vh;
 }
 
 .login {
@@ -17,6 +17,10 @@
 }
 
 .login :first-child {
+    margin-bottom: 2vh;
+}
+
+.login :last-child {
     margin-bottom: 2vh;
 }
 
