@@ -141,7 +141,7 @@ router.get("/workTomorrow", async (req, res) => {
 
 router.get("/login", (req, res) => {
     if (req.session.isAuthentificated) {
-        res.redirect("/");
+        res.redirect("/todo");
     } else {
         res.render("../views/todo/todoLogin.hbs", {
             title: "Менеджер клиентов авторизация",
@@ -165,43 +165,47 @@ router.get("/add", (req, res) => {
 });
 
 router.post("/add", async (req, res) => {
-    const {
-        name,
-        age,
-        phone,
-        whenDel,
-        callBack,
-        distance,
-        stamp,
-        count,
-        truck,
-        description,
-    } = req.body;
-    const client = new Client({
-        name,
-        age,
-        phone,
-        whenDel: whenDel
-            ? Intl.DateTimeFormat("ru-RU", {
-                  year: "numeric",
-                  day: "numeric",
-                  month: "numeric",
-              }).format(new Date(whenDel))
-            : "",
-        callBack: Intl.DateTimeFormat("ru-RU", {
-            year: "numeric",
-            day: "numeric",
-            month: "numeric",
-        }).format(new Date(callBack)),
-        distance,
-        stamp,
-        count,
-        truck,
-        description,
-        id: uuidv4(),
-    });
-    await client.save();
-    res.redirect("/todo");
+    if (req.session.isAuthentificated) {
+        const {
+            name,
+            age,
+            phone,
+            whenDel,
+            callBack,
+            distance,
+            stamp,
+            count,
+            truck,
+            description,
+        } = req.body;
+        const client = new Client({
+            name,
+            age,
+            phone,
+            whenDel: whenDel
+                ? Intl.DateTimeFormat("ru-RU", {
+                      year: "numeric",
+                      day: "numeric",
+                      month: "numeric",
+                  }).format(new Date(whenDel))
+                : "",
+            callBack: Intl.DateTimeFormat("ru-RU", {
+                year: "numeric",
+                day: "numeric",
+                month: "numeric",
+            }).format(new Date(callBack)),
+            distance,
+            stamp,
+            count,
+            truck,
+            description,
+            id: uuidv4(),
+        });
+        await client.save();
+        res.redirect("/todo");
+    } else {
+        res.send(401);
+    }
 });
 
 router.post("/login", async (req, res) => {
