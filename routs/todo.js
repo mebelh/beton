@@ -15,6 +15,7 @@ router.get("/", async (req, res) => {
             isTodo: true,
             layout: "todo",
             all: true,
+            pageInf: "Все клиенты",
             clients: clients.map((e) => {
                 return {
                     ...e,
@@ -39,6 +40,7 @@ router.get("/callToday", async (req, res) => {
             isTodo: true,
             layout: "todo",
             callToday: true,
+            pageInf: "Позвонить сегодня",
             clients: clients
                 .map((e) => {
                     return {
@@ -73,6 +75,7 @@ router.get("/workToday", async (req, res) => {
             isTodo: true,
             layout: "todo",
             workToday: true,
+            pageInf: "Работа на сегодня",
             clients: clients
                 .map((e) => {
                     return {
@@ -107,6 +110,7 @@ router.get("/workTomorrow", async (req, res) => {
             isTodo: true,
             layout: "todo",
             workTomorrow: true,
+            pageInf: "Работа на завтра",
             clients: clients
                 .map((e) => {
                     return {
@@ -139,6 +143,7 @@ router.get("/login", (req, res) => {
     res.render("../views/todo/todoLogin.hbs", {
         title: "Менеджер клиентов авторизация",
         isTodo: true,
+        isLogin: true,
         layout: "todo",
     });
 });

@@ -1,9 +1,12 @@
 {{>head}}
 
 <body>
+    {{#if isLogin}}
+    {{else}}
     {{>todo-navbar}}
-
+    {{/if}}
     <div class="container">
+        <h3 class="pageInf">{{pageInf}}</h3>
         {{{body}}}
     </div>
 </body>

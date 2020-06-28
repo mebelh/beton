@@ -3,13 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
 }
+
 .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5vh;
+    width: 95%;
     background-color: #fff;
     border-radius: 1em;
 }
@@ -26,7 +28,8 @@
     margin-top: 3vh;
     margin-bottom: 3vh;
 }
-.add > :first-child {
+
+.add> :first-child {
     text-align: center;
 }
 
@@ -46,4 +49,9 @@
 
 button :last-child {
     float: right;
+}
+
+.pageInf {
+    text-align: center;
+    margin-top: 3vh;
 }
