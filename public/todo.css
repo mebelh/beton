@@ -33,7 +33,7 @@
     margin-bottom: 3vh;
 }
 
-.add> :first-child {
+.add > :first-child {
     text-align: center;
 }
 
@@ -49,6 +49,10 @@
 .accordion {
     margin-top: 3vh;
     margin-bottom: 3vh;
+}
+
+.todo-inf-group > :last-child {
+    max-width: 50%;
 }
 
 button :last-child {
