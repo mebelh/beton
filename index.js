@@ -14,6 +14,7 @@ const mainRout = require("./routs/main");
 const kontaktsRout = require("./routs/kontakts");
 const calcRout = require("./routs/calc");
 const todoRout = require("./routs/todo");
+const feedBackRout = require("./routs/feedback");
 
 const MONGO_URI =
     "mongodb+srv://memet:12345@cluster0-mjl6h.mongodb.net/SimfBeton?retryWrites=true&w=majority";
@@ -58,6 +59,7 @@ app.use("/", mainRout);
 app.use("/kontakts", kontaktsRout);
 app.use("/calc", calcRout);
 app.use("/todo", todoRout);
+app.use("/feedback", feedBackRout);
 
 const User = require("./models/user");
 const bcrypt = require("bcrypt");

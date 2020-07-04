@@ -16,6 +16,10 @@ formBtn.addEventListener("click", async (e) => {
     }
 });
 
+$(document).ready(function () {
+    $(".collapsible").collapsible();
+});
+
 const price = [
     { name: "M100", strong: "B7.5", price: "3300р" },
     { name: "M150", strong: "B12.5", price: "3400р" },

@@ -24,12 +24,6 @@ router.post("/form/:name/:phone", (req, res) => {
                 random_id: easyvk.randomId(),
             });
         }
-
-        // await vk.call("messages.send", {
-        //     peer_id: 429065243,
-        //     message: `${req.params.name} \n ${req.params.phone}`,
-        //     random_id: easyvk.randomId(),
-        // });
     });
 });
 
