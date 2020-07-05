@@ -121,9 +121,6 @@ addFeedbackAddBtn.addEventListener("click", () => {
                                                 <textarea id="textarea1" class="materialize-textarea" name="content" required></textarea>
                                                 <label for="textarea1">Ваш отзыв</label>
                                             </div>
-                                            <div class="input-field col s12">
-                                                <input type="date" class="materialize-textarea" name="date"></input>
-                                            </div>
                                         </div>
                                         <div class="feedback-add-btns">
                                             <button type="submit" class="btn green">Отправить</button>

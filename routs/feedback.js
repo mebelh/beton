@@ -10,11 +10,10 @@ const changeDate = (date) => {
 };
 
 router.post("/", async (req, res) => {
-    const { name, content, date } = req.body;
+    const { name, content } = req.body;
     const feedb = new feedback({
         name,
         content,
-        date,
     });
     await feedb.save();
     res.redirect("/feedback/all");
