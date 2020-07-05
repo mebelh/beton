@@ -135,6 +135,26 @@
         text-align: center;
     }
 
+
+    /* feedback */
+
+
+    .feedBack-wrapper h4 {
+        font-size: 2em;
+    }
+
+    .feedBack-card {
+        width: auto;
+    }
+
+    .feedBack-card_arr>div {
+        left: 0;
+    }
+
+    /* price */
+
+
+
     .price ul {
         margin-top: 2em;
     }

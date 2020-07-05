@@ -8,7 +8,7 @@ const feedBackSchema = new Schema({
         type: Date,
         default: new Date(),
     },
-    text: {
+    content: {
         type: String,
     },
 });

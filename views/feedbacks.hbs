@@ -1,0 +1,12 @@
+<div class="feedBacks feedBack-wrapper">
+    <h4>Отзывы</h4>
+    {{#each feedBacks}}
+    <div class="feedBack-card">
+        <h5>{{name}}</h5>
+        <div class="feedBack-card_date">{{date}}</div>
+        <hr>
+        <div class="feedBack-card_text">{{content}}</div>
+    </div>
+    {{/each}}
+    <div class="feedBack-add_btn btn"><i class="material-icons">feedback</i><span>Оставить отзыв</span></div>
+</div>

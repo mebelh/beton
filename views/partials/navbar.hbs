@@ -4,11 +4,26 @@
         <li class="active">
             <a href="/" class="navbar-link">Главная</a>
         </li>
+
         {{else}}
         <li class="">
             <a href="/" class="navbar-link">Главная</a>
         </li>
         {{/if}}
+
+
+        {{#if isFeedbacks}}
+
+        <li class="active">
+            <a href="/feedback/all" class="navbar-link">Отзывы</a>
+        </li>
+
+        {{else}}
+        <li class="">
+            <a href="/feedback/all" class="navbar-link">Отзывы</a>
+        </li>
+        {{/if}}
+
         {{#if isKontakts}}
 
         <li class="active">
@@ -18,17 +33,6 @@
         {{else}}
         <li class="">
             <a href="/kontakts" class="navbar-link">Контакты</a>
-        </li>
-        {{/if}}
-        {{#if isCalc}}
-
-        <li class="active">
-            <a href="/calc" class="navbar-link">Калькулятор</a>
-        </li>
-
-        {{else}}
-        <li class="">
-            <a href="/calc" class="navbar-link">Калькулятор</a>
         </li>
         {{/if}}
     </ul>
