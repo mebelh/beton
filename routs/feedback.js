@@ -14,6 +14,7 @@ router.post("/", async (req, res) => {
     const feedb = new feedback({
         name,
         content,
+        date: new Date(),
     });
     await feedb.save();
     res.redirect("/feedback/all");
