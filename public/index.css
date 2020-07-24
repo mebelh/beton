@@ -275,10 +275,12 @@ ul {
     align-items: center;
 }
 
-.advantages h4 {
-    color: #008cff;
+.advantages h4,
+.certificates_wrapper h4 {
+    color: #067bdb;
     font-size: 2.6em;
     margin-bottom: .5em;
+    text-align: center;
 }
 
 .advantages ul li {
@@ -348,6 +350,46 @@ ul {
     -ms-transform: translateY(.3em);
     transform: translateY(.3em);
 }
+
+/* Сертификаты */
+
+.certificates_wrapper {
+    margin-top: 3em;
+}
+
+.certificates {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.certificates div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 400px;
+    height: 600px;
+    border-radius: .8em;
+    border: 1px solid #000;
+    -webkit-box-shadow: 0 0 10px #0084ff49;
+    box-shadow: 0 0 10px #0084ff49;
+}
+
+.certificates .decl {
+    background-image: url(/DeclSert.jpg);
+}
+
+.certificates .sootv {
+    background-image: url(/SertSootv.jpg);
+}
+
 
 /* Feedback */
 
@@ -733,6 +775,13 @@ option {
     .container {
         width: 80%;
     }
+
+    /* Sertif */
+
+    .certificates div {
+        width: 300px;
+        height: 450px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -791,5 +840,44 @@ option {
 
     .top-lay li a {
         font-size: 0.6em;
+    }
+
+    .certificates {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .certificates div {
+        width: 500px;
+        height: 750px;
+    }
+
+    .advantages-blocks ul {
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .certificates {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .certificates div {
+        width: 400px;
+        height: 600px;
+        margin-top: 1em;
     }
 }

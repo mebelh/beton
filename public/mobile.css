@@ -151,9 +151,32 @@
         left: 0;
     }
 
+    /* Sertif */
+
+    .certificates_wrapper {
+        margin-top: 3em;
+    }
+
+    .certificates {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .certificates_wrapper h4 {
+        font-size: 2em;
+    }
+
+
+    .certificates div {
+        margin-top: 1em;
+        width: 300px;
+        height: 450px;
+    }
+
+
     /* price */
-
-
 
     .price ul {
         margin-top: 2em;
