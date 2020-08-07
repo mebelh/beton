@@ -30,6 +30,8 @@ textarea.materialize-textarea:focus:not([readonly]) {
     background-color: #0099ff;
 }
 
+/* Header */
+
 .navbar {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93,7 +95,8 @@ nav {
     flex-direction: row;
     margin-top: 3vh;
     height: 55vh;
-    background: #d8d8d8 url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
+    background: #d8d8d8
+        url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
     background-size: 100%;
     background-position: center;
 }
@@ -279,7 +282,7 @@ ul {
 .certificates_wrapper h4 {
     color: #067bdb;
     font-size: 2.6em;
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     text-align: center;
 }
 
@@ -346,9 +349,9 @@ ul {
 
 .advantages-blocks ul li i {
     font-size: 2em;
-    -webkit-transform: translateY(.3em);
-    -ms-transform: translateY(.3em);
-    transform: translateY(.3em);
+    -webkit-transform: translateY(0.3em);
+    -ms-transform: translateY(0.3em);
+    transform: translateY(0.3em);
 }
 
 /* Сертификаты */
@@ -376,7 +379,7 @@ ul {
     background-size: 100%;
     width: 400px;
     height: 600px;
-    border-radius: .8em;
+    border-radius: 0.8em;
     border: 1px solid #000;
     -webkit-box-shadow: 0 0 10px #0084ff49;
     box-shadow: 0 0 10px #0084ff49;
@@ -389,7 +392,6 @@ ul {
 .certificates .sootv {
     background-image: url(/SertSootv.jpg);
 }
-
 
 /* Feedback */
 
@@ -411,20 +413,20 @@ ul {
     color: #067bdb;
     text-align: center;
     font-size: 2.6em;
-    margin-bottom: .7em;
+    margin-bottom: 0.7em;
 }
 
 .feedBack-card {
     width: 600px;
     border: 1px solid #000;
-    padding: .6em 1.5em 1.2em 1.5em;
+    padding: 0.6em 1.5em 1.2em 1.5em;
     border-radius: 1em;
     font-size: 1.1em;
     margin-bottom: 1em;
 }
 
 .feedBack-card hr {
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 .feedBack-card_arr {
@@ -436,7 +438,7 @@ ul {
     transition: all ease 1s;
 }
 
-.feedBack-card_arr>div {
+.feedBack-card_arr > div {
     position: absolute;
     left: calc(50% - 300px);
     -webkit-animation-name: feedAnim;
@@ -551,6 +553,27 @@ ul {
     margin-left: 1vw;
 }
 
+.kontakt-dev {
+    opacity: 0.8;
+    transition: all ease-in 0.5s;
+}
+
+.kontakt-dev:hover {
+    opacity: 1;
+}
+
+.kontakt-dev h3 {
+    font-size: 2.1rem;
+    color: #ffae00;
+    font-weight: 450;
+    text-align: center;
+}
+
+.kontakt-dev__link {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
 /* Calcul */
 
 .calc {
@@ -563,32 +586,32 @@ ul {
     grid-template-rows: 4fr 1fr;
 }
 
-.calc>*:nth-child(1) {
+.calc > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-.calc>*:nth-child(2) {
+.calc > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
 }
 
-.calc>*:nth-child(3) {
+.calc > *:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
 }
 
-.calc>*:nth-child(4) {
+.calc > *:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
 }
 
-.calc>*:nth-child(5) {
+.calc > *:nth-child(5) {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
 }
 
-.calc>*:nth-child(6) {
+.calc > *:nth-child(6) {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
 }
@@ -648,7 +671,7 @@ option {
     text-align: start;
 }
 
-.dropdown-content li>span {
+.dropdown-content li > span {
     color: #0070bb;
     text-align: center;
 }
@@ -875,7 +898,6 @@ option {
 }
 
 @media (max-width: 650px) {
-
     .certificates {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
