@@ -350,6 +350,11 @@
     .footer-cont a {
         color: white;
     }
+
+    .footer__link-dev {
+        bottom: 11vh;
+    }
+
 }
 
 @media (max-width: 361px) {

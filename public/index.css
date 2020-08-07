@@ -656,6 +656,7 @@ option {
 /* footer */
 
 .footer {
+    position: relative;
     margin-top: 5vh;
     height: 10vh;
     background-color: #039be5;
@@ -678,6 +679,16 @@ option {
 .footer-cont,
 .footer-cont a {
     color: white;
+}
+
+.footer__link-dev {
+    position: absolute;
+    right: 1rem;
+    bottom: 6vh;
+}
+
+.footer__link-dev a {
+    color: #d0f4ff;
 }
 
 /* Modals */

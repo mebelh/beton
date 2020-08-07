@@ -35,6 +35,7 @@ const hbs = exphbs.create({
     extname: "hbs",
     handlebars: allowInsecurePrototypeAccess(Handlebars),
 });
+
 app.engine("hbs", hbs.engine);
 app.set("view engine", "hbs");
 app.set("views", "views");
