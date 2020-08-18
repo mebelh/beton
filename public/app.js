@@ -1,20 +1,20 @@
 const formBtn = document.querySelector(".baner_btn");
 const name = document.querySelector(".form_name");
 const phone = document.querySelector(".form_phone");
-formBtn.addEventListener("click", async (e) => {
-    e.preventDefault();
-    if (name.value !== "" && phone.value !== "") {
-        fetch(`/form/${name.value}/${phone.value}`, {
-            method: "POST",
-            headers: {
-                inf: `${navigator.userAgent}`,
-            },
-        });
-        setTimeout(() => {
-            window.location.reload();
-        }, 4000);
-    }
-});
+// formBtn.addEventListener("click", async (e) => {
+//     e.preventDefault();
+//     if (name.value !== "" && phone.value !== "") {
+//         fetch(`/form/${name.value}/${phone.value}`, {
+//             method: "POST",
+//             headers: {
+//                 inf: `${navigator.userAgent}`,
+//             },
+//         });
+//         setTimeout(() => {
+//             window.location.reload();
+//         }, 4000);
+//     }
+// });
 
 $(document).ready(function () {
     $(".collapsible").collapsible();
@@ -139,21 +139,23 @@ addFeedbackAddBtn.addEventListener("click", () => {
     });
 });
 
-// Price
+// Pricelist
 
-const price = [
-    { name: "M100", strong: "B7.5", price: "3300р" },
-    { name: "M150", strong: "B12.5", price: "3400р" },
-    { name: "M200", strong: "B15", price: "3500р" },
-    { name: "M250", strong: "B20", price: "3700р" },
-    { name: "M300", strong: "B22.5", price: "4050р" },
-    { name: "M350", strong: "B25", price: "4300р" },
-    { name: "M400", strong: "B30", price: "4600р" },
-    { name: "M450", strong: "B35", price: "5150р" },
-    { name: "M500", strong: "B40", price: "6000р" },
-];
+import { price } from "/price.js";
 
-export default price;
+const priceTab = document.querySelector(".price ul");
+
+price.forEach((e, index) => {
+    const elem = document.createElement("li");
+    elem.classList.add("collection-item");
+    for (let i in e) {
+        const div = document.createElement("div");
+        div.textContent = e[i];
+        elem.appendChild(div);
+    }
+    elem.style.backgroundColor = index % 2 !== 0 ? "white" : "#f0f0f0";
+    priceTab.appendChild(elem);
+});
 
 // modal
 const modalWrap = document.querySelector(".modal-wrapper");
