@@ -95,7 +95,8 @@ nav {
     flex-direction: row;
     margin-top: 3vh;
     height: 55vh;
-    background: #d8d8d8 url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
+    background: #d8d8d8
+        url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
     background-size: 100%;
     background-position: center;
 }
@@ -437,7 +438,7 @@ ul {
     transition: all ease 1s;
 }
 
-.feedBack-card_arr>div {
+.feedBack-card_arr > div {
     position: absolute;
     left: calc(50% - 300px);
     -webkit-animation-name: feedAnim;
@@ -554,6 +555,8 @@ ul {
 
 .kontakt-dev {
     opacity: 0.8;
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
     transition: all ease-in 0.5s;
 }
 
@@ -585,7 +588,11 @@ ul {
 
 .calc-form {
     margin-top: 2rem;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
     grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
     grid-row: 2/3;
     width: 100% !important;
     border: 2px solid #008cff;
@@ -596,32 +603,32 @@ ul {
     text-align: center;
 }
 
-.calc>*:nth-child(1) {
+.calc > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-.calc>*:nth-child(2) {
+.calc > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
 }
 
-.calc>*:nth-child(3) {
+.calc > *:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
 }
 
-.calc>*:nth-child(4) {
+.calc > *:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
 }
 
-.calc>*:nth-child(5) {
+.calc > *:nth-child(5) {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
 }
 
-.calc>*:nth-child(6) {
+.calc > *:nth-child(6) {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
 }
@@ -681,7 +688,7 @@ option {
     text-align: start;
 }
 
-.dropdown-content li>span {
+.dropdown-content li > span {
     color: #0070bb;
     text-align: center;
 }
