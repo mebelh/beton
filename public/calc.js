@@ -27,11 +27,21 @@ const select = document.getElementById("select");
 [count, height, width].forEach((e) => {
     e.addEventListener("keyup", () => {
         // console.log(e.value.split(",").join("."));
-        endSize.value =
+        const value = (
             +count.value.split(",").join(".") *
-                +height.value.split(",").join(".") *
-                +width.value.split(",").join(".") +
-            " м3";
+            +height.value.split(",").join(".") *
+            +width.value.split(",").join(".")
+        )
+            .toString()
+            .split(".");
+        // .split(".");
+
+        if (value.length < 2) {
+            value[1] = "0";
+        }
+        console.log(value);
+
+        endSize.value = value[0] + "." + value[1].slice(0, 1) + " м3";
         endPrice.value =
             +count.value.split(",").join(".") *
                 +height.value.split(",").join(".") *

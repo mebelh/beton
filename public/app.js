@@ -1,20 +1,6 @@
 const formBtn = document.querySelector(".baner_btn");
 const name = document.querySelector(".form_name");
 const phone = document.querySelector(".form_phone");
-// formBtn.addEventListener("click", async (e) => {
-//     e.preventDefault();
-//     if (name.value !== "" && phone.value !== "") {
-//         fetch(`/form/${name.value}/${phone.value}`, {
-//             method: "POST",
-//             headers: {
-//                 inf: `${navigator.userAgent}`,
-//             },
-//         });
-//         setTimeout(() => {
-//             window.location.reload();
-//         }, 4000);
-//     }
-// });
 
 $(document).ready(function () {
     $(".collapsible").collapsible();
@@ -160,21 +146,15 @@ price.forEach((e, index) => {
 // modal
 const modalWrap = document.querySelector(".modal-wrapper");
 
-document.addEventListener("click", (e) => {
-    if (
-        e.target.classList.contains("modal-trigger") &&
-        name.value !== "" &&
-        phone.value !== ""
-    ) {
-        modalWrap.style.display =
-            modalWrap.style.display === "flex" ? "none" : "flex";
-    }
-    if (e.target.classList.contains("Blondie")) {
-        fetch(`/clic/phone`, {
-            method: "POST",
-            headers: {
-                inf: `${navigator.userAgent}`,
-            },
-        });
-    }
-});
+// document.addEventListener("click", (e) => {
+//     console.log(phone);
+//     if (
+//         e.target.classList.contains("modal-trigger") &&
+//         name.value !== "" &&
+//         phone.value !== "" &&
+//         phone.length > 10
+//     ) {
+//         modalWrap.style.display =
+//             modalWrap.style.display === "flex" ? "none" : "flex";
+//     }
+// });

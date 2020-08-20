@@ -54,6 +54,7 @@
         margin-top: 2vh;
         height: auto;
         background-size: 300%;
+        padding-bottom: 2rem;
     }
 
     .baner-content {
@@ -88,6 +89,7 @@
         border-radius: 2vh;
         width: 95vw;
         height: auto;
+        margin-bottom: 3rem;
         padding: 2vh;
         margin-bottom: 2vh;
     }
@@ -320,6 +322,11 @@
 
     .calc-body_price {
         text-align: center;
+    }
+
+
+    .calc-body .collection-item {
+        height: 75px;
     }
 
     .footer {

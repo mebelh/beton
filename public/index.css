@@ -93,11 +93,13 @@ nav {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-top: 3vh;
+    margin-top: 1rem;
     height: 55vh;
-    background: #d8d8d8
-        url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
-    background-size: 100%;
+    min-height: 450px;
+    max-height: 550px;
+    background: #d8d8d8 url(https://besthqwallpapers.com/Uploads/16-11-2017/28911/daf-cf-8h4-2017-concrete-mixer-concrete-transportation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -163,7 +165,8 @@ nav {
     -ms-flex-align: center;
     align-items: center;
     border-radius: 2em;
-    width: 40vh;
+    width: 20rem;
+    min-width: 250px;
     /* height: auto; */
     padding: 1em;
 }
@@ -438,7 +441,7 @@ ul {
     transition: all ease 1s;
 }
 
-.feedBack-card_arr > div {
+.feedBack-card_arr>div {
     position: absolute;
     left: calc(50% - 300px);
     -webkit-animation-name: feedAnim;
@@ -603,32 +606,32 @@ ul {
     text-align: center;
 }
 
-.calc > *:nth-child(1) {
+.calc>*:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
 }
 
-.calc > *:nth-child(2) {
+.calc>*:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
 }
 
-.calc > *:nth-child(3) {
+.calc>*:nth-child(3) {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
 }
 
-.calc > *:nth-child(4) {
+.calc>*:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
 }
 
-.calc > *:nth-child(5) {
+.calc>*:nth-child(5) {
     -ms-grid-row: 2;
     -ms-grid-column: 2;
 }
 
-.calc > *:nth-child(6) {
+.calc>*:nth-child(6) {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
 }
@@ -664,7 +667,7 @@ option {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 9vh;
+    height: 55px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -688,7 +691,7 @@ option {
     text-align: start;
 }
 
-.dropdown-content li > span {
+.dropdown-content li>span {
     color: #0070bb;
     text-align: center;
 }
@@ -697,8 +700,8 @@ option {
 
 .footer {
     position: relative;
-    margin-top: 5vh;
-    height: 10vh;
+    margin-top: 2rem;
+    height: 5rem;
     background-color: #039be5;
     -webkit-box-shadow: 0 0 10px #065780;
     box-shadow: 0 0 10px #065780;
@@ -779,20 +782,17 @@ option {
 .modal-ok button {
     position: absolute;
     right: 0;
-    bottom: 0vh;
+    bottom: 0;
 }
 
 @media (max-width: 1300px) {
-    .baner {
-        height: 60vh;
+
+    .calc {
+        grid-template-columns: 1fr 5fr 1fr;
     }
 
     .baner-text {
         text-align: center;
-    }
-
-    .form-call-me {
-        width: 50vh;
     }
 
     .advantages img {
@@ -820,9 +820,7 @@ option {
     .advantages-end .advantages-text {
         width: 80%;
     }
-}
 
-@media (max-width: 1300px) {
     .container {
         width: 80%;
     }
@@ -836,6 +834,11 @@ option {
 }
 
 @media (max-width: 1080px) {
+
+    .form-call-me {
+        width: 22rem;
+    }
+
     .top-lay li a {
         font-size: 0.7em;
     }
@@ -915,6 +918,7 @@ option {
 }
 
 @media (max-width: 650px) {
+
     .certificates {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;

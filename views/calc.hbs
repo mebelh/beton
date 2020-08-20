@@ -12,7 +12,7 @@
                 <div class="calc_inp row s12">
                     <h6 class="col s6">Общая длинна ленты <strong>(м)</strong></h6>
                     <div class="input-field col s6">
-                        <input placeholder="0" id="count" type="text" class="validate" pattern="[0-9\.]*">
+                        <input placeholder="0" id="count" type="text" class="validate" pattern="[0-9\.,]*">
                     </div>
                 </div>
             </li>
@@ -20,7 +20,7 @@
                 <div class="calc_inp row s12">
                     <h6 class="col s6">Ширина ленты <strong>(м)</strong></h6>
                     <div class="input-field col s6">
-                        <input placeholder="0" id="width" type="text" class="validate" pattern="[0-9\.]*">
+                        <input placeholder="0" id="width" type="text" class="validate" pattern="[0-9\.,]*">
                     </div>
                 </div>
             </li>
@@ -28,7 +28,7 @@
                 <div class="calc_inp row s12">
                     <h6 class="col s6">Высота ленты <strong>(м)</strong></h6>
                     <div class="input-field col s6">
-                        <input placeholder="0" id="height" type="text" class="validate" pattern="[0-9\.]*">
+                        <input placeholder="0" id="height" type="text" class="validate" pattern="[0-9\.,]*">
                     </div>
                 </div>
             </li>
@@ -55,8 +55,8 @@
                     </div>
                     <div class="input-field col s12">
                         <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephon" name="phone" type="tel" class="validate form_phone"
-                            pattern="[/+]?[0-9]*" minlength="10" maxlength="18" required>
+                        <input id="icon_telephon" name="phone" class="validate form_phone" pattern="[/+]?[0-9()-]*"
+                            minlength="9" maxlength="18" required>
                         <label for="icon_telephon">Номер телефона</label>
                     </div>
                     <button
